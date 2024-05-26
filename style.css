@@ -1,172 +1,172 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
 
 * {
-    margin: 0;
-    padding: 0;
-    font-family: "Poppins", sans-serif;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  box-sizing: border-box;
 }
-
 
 body {
-    background-color: black;
-    /*height: 100vh; */
+  background-color: black;
 }
 
-.body-part,.col .card{
-    padding-bottom: 10px;
-    box-shadow: 25px 25px 75px rgba(0,0,0,0.2),
-    10px 10px 60px rgba(0,0,0,0.2),
-    inset 5px 5px 10px rgba(0,0,0,0.5),
-    inset 5px 5px 20px rgba(255,255,255,0.2),
+.body-part,
+.col .card {
+  padding-bottom: 10px;
+  box-shadow: 25px 25px 75px rgba(0, 0, 0, 0.2),
+    10px 10px 60px rgba(0, 0, 0, 0.2), inset 5px 5px 10px rgba(0, 0, 0, 0.5),
+    inset 5px 5px 20px rgba(255, 255, 255, 0.2),
     inset -5px -5px 15px rgba(122, 121, 121, 0.75);
 }
-.btn ,.city-input,.part-1{
-    padding-bottom: 10px;
-    box-shadow: 25px 25px 75px rgba(0,0,0,0.2),
+.btn,
+.city-input,
+.part-1 {
+  padding-bottom: 10px;
+  box-shadow: 25px 25px 75px rgba(0, 0, 0, 0.2),
     inset 5px 5px 10px rgba(187, 185, 185, 0.5),
-    inset 5px 5px 20px rgba(255,255,255,0.2)
+    inset 5px 5px 20px rgba(255, 255, 255, 0.2);
 }
-p{
-    font-size: 16px;
-}
-
-hr{
-    background-color: aliceblue;
-}
-h1.city{
-    font-size: 40px;
+p {
+  font-size: 16px;
 }
 
-.main-title{
-    margin-bottom: 0px;
-    margin-left: 40px;
-    margin-top: 20px;
+hr {
+  background-color: aliceblue;
 }
-.my-title{
-    font-size: 45px;
+h1.city {
+  font-size: 40px;
+}
+
+.main-title {
+  margin-bottom: 0px;
+  margin-left: 40px;
+  margin-top: 20px;
+}
+.my-title {
+  font-size: 45px;
 }
 
 .search-form {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 }
 
 input[type="text"] {
-    flex: 1;
-    font-size: 1rem;
+  flex: 1;
+  font-size: 1rem;
 }
 
 .search-btn {
-    border: none;
-    border-radius: 15px;
-    cursor: pointer;
-    color: white;
-    margin-left: 10px;
-    transition: background-color 0.3s ease;
+  border: none;
+  border-radius: 15px;
+  cursor: pointer;
+  color: white;
+  margin-left: 10px;
+  transition: background-color 0.3s ease;
 }
 
 .search-btn:hover {
-    background-color: #f435d1;
-    transition: background-color 0.3s ease;
+  background-color: #f435d1;
+  transition: background-color 0.3s ease;
 }
 
-.set{
+.set {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 3px;
+  margin-bottom: 0px;
+}
+.wind-label,
+.humidity-label,
+.visibility,
+.pressure-label {
+  text-align: center;
+  font-size: 25px;
+}
+
+.highlight {
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  margin-left: 30px;
+  padding: 2px;
+}
+
+@media screen and (max-width: 987px) and (min-width: 768px) {
+  h1.city {
+    font-size: 30px;
+  }
+
+  .my-title {
+    font-size: 35px;
+  }
+  .wind-label,
+  .humidity-label,
+  .visibility,
+  .pressure-label {
+    text-align: center;
+    font-size: 18px;
+  }
+}
+
+@media screen and (max-width: 767px) and (min-width: 460px) {
+  h1.city {
+    font-size: 32px;
+  }
+
+  .my-title {
+    font-size: 40px;
+  }
+
+  .set {
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 3px;
     margin-bottom: 0px;
-}
-.wind-label,
-.humidity-label,
-.visibility,
-.pressure-label {
-    text-align: center;
-    font-size: 25px;
-}
-
-.highlight{
-    justify-content: center;
-    align-items: center;
-    margin-top: 20px;
-    margin-left: 30px;
-    padding: 2px;
-}
-
-@media screen and (max-width: 987px) and (min-width: 768px) {
-   h1.city{
-    font-size: 30px;
-   }
-   
-.my-title{
     font-size: 35px;
-}
-.wind-label,
-.humidity-label,
-.visibility,
-.pressure-label {
-    text-align: center;
-    font-size: 18px;
-}
   }
 
-  @media screen and (max-width: 767px) and (min-width: 460px) {
-    h1.city{
-        font-size: 32px;
-       }
-       
-    .my-title{
-        font-size: 40px;
-    }
-
-    .set{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        padding: 3px;
-        margin-bottom: 0px;
-        font-size: 35px;
-    }
-
-    .wind-label,
-.humidity-label,
-.visibility,
-.pressure-label {
+  .wind-label,
+  .humidity-label,
+  .visibility,
+  .pressure-label {
     text-align: center;
     font-size: 18px;
-}
-div.highlight{
+  }
+  div.highlight {
     margin-left: 0px;
     display: inline;
     justify-content: center;
-    align-items: center;grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    grid-template-columns: repeat(2, 1fr);
   }
-  
-   }
+}
 
-   @media (max-width:460px) {
-    h1.city{ margin-top: 5px;
-        font-size: 32px;
-       }
-    .navbar-brand{
-        display: none;
-    }
-    .my-title{
-        font-size: 40px;
-    }
-    .wind-label,
-    .humidity-label,
-    .visibility,
-    .pressure-label {
-        text-align: center;
-        font-size: 18px;
-    }
-    div.highlight{
-        margin-left: 0px;
-        display: inline;
-        justify-content: center;
-        align-items: center;
-      }
-    
-   }
+@media (max-width: 460px) {
+  h1.city {
+    margin-top: 5px;
+    font-size: 32px;
+  }
+  .navbar-brand {
+    display: none;
+  }
+  .my-title {
+    font-size: 40px;
+  }
+  .wind-label,
+  .humidity-label,
+  .visibility,
+  .pressure-label {
+    text-align: center;
+    font-size: 18px;
+  }
+  div.highlight {
+    margin-left: 0px;
+    display: inline;
+    justify-content: center;
+    align-items: center;
+  }
+}
