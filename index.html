@@ -1,0 +1,142 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+        rel="stylesheet"
+        href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    />
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+     integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+     crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+     integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+
+    <title>Weather App</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+<div class="container p-1" style="max-width:auto;">
+        
+    <div class="card-header  text-center mt-5 ">
+            <h3 class="card-title text-center text-light my-title">
+                WEATHER DASHBOARD</h3>
+    </div>
+
+         <br>
+
+    <div class="container ">
+    <div class="card shadow-lg p-2 mb-5 bg-body-tertiary rounded p-3  part-1">
+        <nav class="navbar bg-body-tertiary">
+            <div class="container-fluid ">
+              <h5 class="navbar-brand">WEATHER INFO OF THE CITY</h5>
+        <form class="search-form d-flex form-group mb-3" action="">
+            <input
+                class="city-input form-control me-2 "
+                type="text"
+                placeholder="Enter City"
+            />
+            <button class="search-btn btn text-bg-info weatherIcon" type="submit" >
+                <i class="material-icons"></i> Search
+            </button>
+        </form>
+             </div>
+        </nav>
+
+
+<div class="card mb-2 body-part " >
+
+ <div class="row g-0">
+
+    <div class="col-md-4 text-bg-dark text-center">
+        <div class="card-body city-date-section">
+            <h1 class="card-title  city mt-1 mb-1 text-center">Weather of <span id="city-name">given City</span></h1>
+            <br>
+            <p class="card-text date mb-1" id="date"></p>     
+            <hr>
+            <div class="temperature-info">
+            <div class="description text-center">
+              <i class="material-icons">sunny</i>
+                <span class="card-text text-center description-text" id="description">Sunny</span>
+            </div>
+            <h1 class=" temp text-center" id="temp">Temp °C</h1>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-7 g-0">     
+        <h4 class="card-text main-title">TODAY'S HIGHLIGHTS</h4>
+        <div class="row row-cols-0 row-cols-md-2 g-2 highlight">
+
+        <div class="col">
+            <div class="wind-info card text-bg-info p-0">
+                <div class="card-body text-center p-0">
+                    <div class="set">
+                <h1> <i class="fa-solid fa-wind"></i></h1>
+                    <h4 class=" card-text wind-speed" id="wind-speed"> m/s W</h4>
+                    </div>
+                    <p class=" card-title wind-label">Wind</p>
+                </div>
+                </div>
+        </div>
+
+        <div class="col">
+            <div class="card text-bg-info humidity-info p-0">
+                <div class="card-body text-center p-0">
+                    <div class="set">   <h2><i class="fa-solid fa-water"></i></h2> 
+                    <h4 class="humidity" id="humidity">%</h4> </div>
+                    <p class="humidity-label">Humidity</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col">
+            <div class="card text-bg-info visibility-info p-0">
+            <div class="card-body text-center p-0">
+                <div class="set"><h1><i class="fa-regular fa-eye"></i></h1>
+                    <h5 class="visibility-distance" id="visibility">  km</h5>
+                </div>    
+                    <div class="visibility">Visibility</div>
+                
+            </div>
+            </div>
+        </div>
+
+        <div class="col">
+            <div class="pressure-info card text-bg-info p-0">
+                <div class="card-body text-center p-0">
+                    <div class="set"><h2><i class="fa-solid fa-volcano"></i></h2>
+                    <h5 class="pressure" id="pressure"> mb</h5>
+                    </div>
+                    <p class="pressure-label">Pressure</p>
+                
+                </div>
+            </div>
+        </div>
+
+        </div>
+    </div>
+
+</div>
+</div>
+</div>
+
+   </div>
+
+</div>
+
+    <script>
+        const dateElement = document.getElementById('date');
+        const currentDate = new Date();
+        const options = { year: 'numeric', month: 'long', day: 'numeric' };
+        dateElement.textContent = currentDate.toLocaleDateString('en-US', options);
+    </script>
+    <script src="script1.js"></script>
+</body>
+</html>
