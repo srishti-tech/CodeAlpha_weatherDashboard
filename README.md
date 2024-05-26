@@ -3,10 +3,10 @@
 Welcome to my Weather dashboard project! This web application allows you to know the weather of the city. You can input the city name know its temperature, humidity, perssure,Wind speed and cloud precipitation of present date.
 
 ## Features:
-Task Management: Input the city name effortlessly.
-Task: Web design close to real-time.
-Intuitive Interface: User-friendly design for easy task doing.
-Responsive interface: It is responsive to the size of the window.
+* Task Management: Input the city name effortlessly.
+* Task: Web design close to real-time.
+* Intuitive Interface: User-friendly design for easy task doing.
+* Responsive interface: It is responsive to the size of the window.
 
 ## How to Use
 1. Add a Task: Type your task in the input field and press Enter or click the "Search" button to search the city weather.
