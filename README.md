@@ -9,10 +9,10 @@ Welcome to my Weather dashboard project! This web application allows you to know
 * Responsive interface: It is responsive to the size of the window.
 
 ## How to Use
-1. Add a Task: Type your task in the input field and press Enter or click the "Search" button to search the city weather.
-2. Get details: We can get the weather report like temperature,pressure, humidity and wind speed of the city we have entered.
+* Add a Task: Type your task in the input field and press Enter or click the "Search" button to search the city weather.
+* Get details: We can get the weather report like temperature,pressure, humidity and wind speed of the city we have entered.
 
 ## Technologies Used
-1. HTML: Used for creating the structure of the project.
-2. CSS and Boostrap: Styled the weather dashboard for an appealing user interface.
-3. JavaScript: Implemented task management logic and interactivity features.
+*  HTML: Used for creating the structure of the project.
+*  CSS and Boostrap: Styled the weather dashboard for an appealing user interface.
+*  JavaScript: Implemented task management logic and interactivity features.
